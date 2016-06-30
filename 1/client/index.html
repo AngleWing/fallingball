@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link media="all" rel="stylesheet" href="css/index.css" type="text/css" />
+	<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+	<script src="js/utils.js" type="text/javascript"></script>
+	<script src="js/ball.js" type="text/javascript"></script>
+	<script src="js/person.js" type="text/javascript"></script>
+	<script src="js/bounceball.js" type="text/javascript"></script>
+	<script src="js/music.js" type="text/javascript"></script>
+	<script src="js/control.js" type="text/javascript"></script>
+	<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0" /> 
+	<!--[if IE]><meta name="MobileOptimized" content="width" /><![endif]--> 
+	<script>
+	(function(){
+		addEventListener("load",function(){
+			setTimeout(hideURLbar,0);
+			},false);
+		function hideURLbar(){
+			window.scrollTo(0,1);
+			}
+	})();
+	</script> 
+</head>
+<body>
+<div class="wrap">
+	<div id="game">		
+		<header>
+			<a id="music" title="音乐:开"></a>
+			<audio id="audio-music"  loop="loop" autoplay>
+				<source src="music/bg2.mp3" />
+			</audio>
+			<a id="home" title="首页" href="index.html"></a>
+		</header>
+		<footer>
+			<input type="button" id="pause"/>	
+		</footer>
+	</div>
+	<div id="show">
+		<a id="start">开始</a>
+	</div>
+	<div id="box">
+		<h2>干的好,您坚持了</h2>
+		<h4>00:00:00</h4>
+		<ul>
+			<li><input type="button" value="重玩" id="agin" /></li>
+			<li><input type="button" value="提交" id="submit"></li>
+			<li><input type="button" value="退出" id="exit" /></li>
+		</ul>
+	</div>
+	<div id="box_submit">
+		<h2>输入姓名：</h2>
+		<input type="text" id="playerName"/>
+		<ul>
+			<li><input type="button" value="ok" id="ok"></li>
+		</ul>
+	</div>
+	<!--时间-->
+	<p id="time"><span id="timer">00:00:00</span></p>
+    <!--点击区域-->
+    <div id="blockA"></div>
+    <div id="blockB"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,303 @@
+﻿div,ul,li,h3,*{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+body {
+	margin:0;
+   	width:100%;
+   	height:100%;
+	font-family: "微软雅黑";
+}
+.wrap{
+	width:854px; 
+	height:480px; 
+	background:#fff;
+	margin:80px auto; 
+	position:relative;
+}
+canvas {
+	position:absolute;
+	top:0;
+	left:0;
+   	border: 2px solid #333;
+}
+footer{
+	background: #000000;
+	color: #ffffff;
+	font-family: "微软雅黑";
+	position: absolute;
+	bottom:0px;
+	line-height:46px;
+	width: 854px;
+	height: 46px;
+   	border: 2px solid #333;
+}
+#game{
+	position:relative;
+	width: 854px;
+	height: 480px;
+}
+#show{ 
+	width:854px; 
+	height:480px; 
+	border:2px solid #ccc; 
+	border-bottom:none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background:url(../img/interface_01.png) no-repeat;
+}
+#pause{
+	width:22px;
+	height: 22px;
+	margin-left: 10px;
+	margin-top:12px;
+	background:url(../img/pause.png) no-repeat;
+	border:none;
+	float: left;
+	cursor:pointer;
+	display: none;
+}
+.status{
+	float: left;
+	height: 25px;
+	width: 220px;
+	margin: 0 0 0 20px;
+}
+/*----
+#time{ 
+	float:right; 
+	width: 160px;
+	height: 46px;
+	margin-right:5px;
+	border-left:1px solid #fff;
+	padding:3px 5px;
+	font-size:20px;
+	display: none;
+}
+----*/
+#time{ 
+	position:absolute;
+	width: 230px;
+	height: 46px;
+	top:60px;
+	left:367px;
+	font-size:50px;
+	font-family:"Axure Handwriting","微软雅黑",Georgia,Serif;
+	display: none;
+}
+
+#start{
+	position:absolute;
+	font-size:71px;
+	border: none;
+	left:300px; 
+	top:200px;
+	width: 280px;
+	height: 115px;
+	background:#dbdbdb;
+	-webkit-border-radius:15px; 
+	text-align:center;
+	color:#000;
+	line-height:115px;
+	display:block;
+	cursor:pointer;
+}
+input,img{ 
+	border:0;
+	background:none;
+}
+#box,#box_submit{
+	position:absolute;
+	top:58px; 
+	left:200px; 
+	width:440px; 
+	height:273px; 
+	border:7px solid #000;
+	background: #ffffff;
+	text-align:center;
+	display: none;
+}
+#box_submit{
+	display:none;
+}
+#box_submit input#playerName{
+	border:2px solid #dbaf64;
+	-webkit-border-radius:3px;
+	height:50px;
+	width:200px;
+	font-size:30px;
+}
+h2{
+	margin: 20px auto;
+	width: 250px;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+}
+h4{ 
+	margin: 20px auto;
+	font-size:48px;
+	color:red;
+	background:#fff; 
+	height:30px; 
+	line-height:30px;
+}
+#box ul{
+	margin:10px auto;
+	text-align:center;
+}
+ul li {
+	list-style: none;
+	display:block;
+	float: left;
+}
+#agin, #exit, #submit, #ok{ 
+	width:125px; 
+	height:60px; 
+	margin:10px;
+	border:2px solid #000;
+	font-weight: bold;
+	font-size:30px;
+	-webkit-border-radius:15px;
+}
+#agin:hover, #exit:hover,#submit:hover,#ok:hover{ 
+	cursor:pointer; 
+	border:2px solid #000;
+
+}
+#agin{
+	color: #09c;
+}
+#exit{
+	color: #000;
+}
+#submit{
+	color:#f6c;
+}
+#ok{
+	color:#ff71c7;
+	margin-left:160px;
+}
+
+/*--工具栏--*/
+#music,#home{
+	width: 48px;
+	height: 36px;
+	position: absolute;
+	top:10px;
+	z-index: 1;
+	cursor: pointer;
+	display: none;
+	
+}
+#music{
+	display:block;
+	right:10px;
+	background:url(../img/music-on.png) no-repeat;
+}
+#home{
+	right:58px;
+	background:url(../img/icon_home.png) no-repeat;
+}
+/**********************rank.html************************/
+#rankBox{ 
+	width:854px;
+	height:480px; 
+	margin:80px auto;
+	border:2px solid #000;
+	position:relative;
+}
+#rankBox header{
+	height:60px;
+	background:#000;
+}
+h3.ranktitle,h3.top{
+	float:left;
+	margin-top:0px;
+	margin-bottom:0px;
+	font-size:30px;
+	color:#fff;
+	font-weight:normal;
+	line-height:60px;
+	padding-left:30px;
+}
+h3.top{
+	float:right;
+	margin-right:70px;
+}
+/*--排名ul--*/
+ul#rankul{
+	font-size:30px;
+	width:854px;
+	line-height:53px;
+	overflow:hidden;
+	text-align:center;
+	height:270px;
+
+}
+ul#rankul li{
+	text-align:left;
+	width:100%;
+	border-bottom:1px solid #000;
+}
+.clear{ clear:both;}
+
+.num{
+	margin-left:30px;
+}
+.left{
+	margin-left:30px;
+}
+.right{
+	float:right;
+	margin-right:70px;
+}
+footer p{
+	margin: 0 360px;
+	padding: 3px;
+	font-weight: bold;
+}
+/*-----重玩按钮----*/
+#againbt{
+	display:block;
+	margin:15px auto;
+	width:394px;
+	height:113px;
+	font-size:71px;
+	background:#dbdbdb;
+	cursor:pointer;
+	border: none;
+	-webkit-border-radius:15px; 
+	text-align:center;
+	color:#000;
+	line-height:113px;
+	text-decoration:none;
+}
+#againbt a{
+	color:#000;
+	text-decoration:none;
+}
+
+/*--屏幕点击区域--*/
+#blockA,#blockB{
+	position:absolute;
+	top:60px;
+	left:0;
+	display:block;
+	background:#fff;
+	width:200px;
+	height:370px;
+	
+	filter:alpha(opacity=20);
+	-moz-opacity:0.2;
+	-khtml-opacity: 0.2;
+	opacity: 0.2;
+}
+#blockB{
+	right:0px;
+	background:#fff;
+	margin-left:654px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0" /> 
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<!--[if IE]><meta name="MobileOptimized" content="width" /><![endif]--> 
+<script>
+(function(){
+	addEventListener("load",function(){
+		setTimeout(hideURLbar,0);
+		},false);
+	function hideURLbar(){
+		window.scrollTo(0,1);
+		}
+})();
+
+$(document).ready(function(){
+	
+			$("#blockA").bind('mousedown',function(){
+				$('#blockA').css("background","pink");
+			});
+			$("#blockA").click('mouseup',function(){
+				$('#blockA').css("background","lightblue");
+			});
+	});
+</script> 
+<style type="text/css">
+	.wrap{width:854px; height:480px; margin:0 auto;}
+	#blockA,#blockB{
+		
+		display:block;
+		background:#ccc;
+		float:left;
+		width:417px;
+		height:480px;	
+	}
+	#blockB{
+		background:#999;
+	}
+</style>
+</head>
+<body>
+	<div class="wrap">
+    	<div id="blockA">A</div>
+        <div id="blockB">B</div>
+    </div>
+</body>
+</html>
